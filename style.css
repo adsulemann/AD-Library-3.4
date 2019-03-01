@@ -1,0 +1,179 @@
+/* here the general things */
+
+*{
+    padding: 0px;
+    margin:0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;    /* here is a sittings from CSS 3 we will take it later in advance after we finish HTML 5 course */
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: arial,Tahoma;
+    /* here we dont have to put a semi colum this is HTML 5 */
+    text-decoration: blink;
+}
+
+.clearfix{
+    clear: both; /* here to clear any thing after the float between the side and footer because if we disabled the clear then the footer will go up  under the header  */
+    /* and we have to add an ( empty div class clearfix ) after the side bar and befor the footer to sole this pb */
+}
+
+/* ----------------------------------------- */
+
+
+/* here the head of our page */
+.mainheader{
+    background-color: #333;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+/* ------------------------------------ */
+
+
+/* here the nav things */
+
+nav{
+    text-align: right;
+    position: absolute;
+   top: 15px;
+   right:10px;
+     
+}
+
+/* li{
+    list-style: none;
+} */
+
+ nav ul {
+    padding: 10px; /* here to move it little down bit from the head  */
+
+}
+
+.links ul{
+    list-style: none;
+   
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px;/* to make the nav items bigger and readable */
+}
+
+ nav ul li:after { /*  to put a border on each left side of  nav list and separate them */
+content: " |"
+}
+
+nav ul li:last-child:after{ /* to remove the last  border of (contact us) because it doesn't look nice😂 */
+    content: none;
+}
+
+/* ------------------------------ ----*/
+
+
+/* here the Main things */
+
+main{
+    background-color: #eee;
+    padding: 20px;
+   }
+
+main p{
+    text-align: center;
+}
+
+main p span{
+    font-weight: bold;
+    color: #666;
+}
+
+
+/* -------------------------- */
+
+/* this is article things */
+
+.divarticle{
+    width: 67%;
+    float: left;
+}
+
+
+.divarticle{
+     /*if you want:
+      padding: 20px; 
+      to creat a gap beteen the articles from top to down and from leftto right*/
+    background-color:#f6f6f6; /* this color is near white and litle bite near from blue sugar */
+    
+    margin: 20px; /* here to make separate the articles from each other  */
+}
+
+.divarticle header{
+   background-color: #e2e2e2;
+   padding: 10px;
+}
+
+.divarticle section{
+    padding: 10px;
+}
+
+article section details{
+    margin: 10px 0px 0px 10px;
+    
+}
+
+
+.divarticle article section .input input{
+  display: block;
+ padding: 5px;
+ margin: 5px;
+}
+
+
+
+
+/* ------------------------------- */
+
+
+/* here is the asidebar */
+
+aside{
+float: right;
+width: 30%;
+}
+
+aside section{
+    background-color: #eee;
+    margin: 20px 10px;
+    padding: 10px;
+    border: 1px solid #ccc ;
+    margin-bottom: 20px;
+
+}
+
+
+aside section h3{
+  background-color:  #d1d1d1;
+  padding: 10px;
+}
+aside section ul{
+margin-top: 10px;
+}
+
+aside section ul li{
+    line-height: 2;
+}
+
+meter { /* this is the CPU Meter */
+margin-top: 15px;
+}
+/* ----------------------------- */
+
+
+/* here is the footer  */
+footer{
+background-color:#333;
+color: #ddd;
+text-align: center;
+padding: 10px; 
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <header class="mainheader">
+    <h1>HTML 5 Exercise 💻</h1>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li>Services</li>
+        <li>Contact us</li>
+      </ul>
+    </nav>
+    
+  </header>
+ 
+   
+ 
+<main>
+  <p>Welcome to our <span>HTML 5 Page</span> </p>
+</main>
+
+<div class="divarticle">
+<article>
+  <header> 
+    <h3>Article #1</h3>
+    <p>created by <SPAN>AD</SPAN>on <span>26/2/2019</span> </p>
+  </header>
+  <section>
+      <p>This is Article Number #1</p>
+      <div>
+        Design :<progress value="7" max="10"></progress> <br>
+        Coding :<progress value="65" max="100"></progress> 
+      
+      </div>
+  </section>
+  
+</article>
+
+
+<article>
+  <header>
+    <h3>Article #2</h3>
+    <p>created by <SPAN>AD</SPAN>on <span>26/2/2019</span> </p>
+  </header>
+  <section>
+      <p>This is Article Number #2</p>
+      <p> 
+        <details>
+          <ul>
+            <li>Ref 1</li>
+            <li>Ref 2</li>
+            <li>Ref 2</li>
+          </ul>
+        </details>
+      </p>
+  </section>
+  
+</article>
+
+<article>
+  <header>
+    <h3>Article #3</h3>
+    <p>created by <SPAN>AD</SPAN>on <span>26/2/2019</span> </p>
+  </header>
+  <section>
+      <p>This is Article Number #3</p>
+  </section>
+</article>
+
+
+
+<article>
+  <header>
+    <h3>This is field new Input</h3>
+  </header>
+  <section>
+      <p>This is new Input Field</p>
+      <form class="input">
+        <label>Color</label>
+        <input type="color" name="theme" value="#">
+        <label>Range</label>
+        <input type="range" name="choose" min="0" max="100" step="10" value="1">
+        <label>Number</label>
+        <input type="number"  min="0" max="100" step="10" value="hidden">
+        <label>Submit</label>
+        <input type="submit" value="send">
+        <label>E-mail</label>
+        <input type="email" name="E-mail" autocomplete="off">
+        <label>Search</label>
+        <input type="search">
+        <label>Url</label>
+        <input type="url" name="link">
+        <label>Time</label>
+        <input type="time">
+        <label>Date</label>
+        <input type="date">
+        <label>Month</label>
+        <input type="month">
+        <label>week</label>
+        <input type="week">
+        <label>Required Text</label>
+        <input type="text" required>
+        
+        <label>Disable</label>
+        <input type="text" name="disable" value="disable" disabled>
+
+        <label>Read only</label>
+        <input type="text" name="read-only" value="read only" readonly>
+      </form>
+  </section>
+</article>
+
+
+
+
+<article>
+  <form>
+    <header>
+      <h3>Using a New Form Attributes </h3>
+    </header>
+    <section class="newform">
+        <label>User name</label>
+        <input type="text" name="username" placeholder="Type your name">
+        <br>
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Type your pass" >
+        
+        <br>
+        <input type="file" name="Choose File" multiple >
+      <br>
+      <label>Pattern</label>
+        <input type="text"  pattern="A-Z {6}" >
+        6 minim
+        ,latin
+        <br>  
+        <input type="submit" >
+    </section>
+  </form>
+  </article>
+</div> 
+
+
+
+
+<aside>
+  <section class="links">
+    <h3>Categories</h3>
+    
+    <ul>
+      <li>Intro</li>
+      <li>Semantics</li>
+      <li>APL</li>
+      <li>New Attributes</li>
+      <li>Multimedia Elements</li>
+    </ul>
+  </section>
+
+  <section class="meter">
+    <div>
+    <h3>Performace</h3>
+      CPU: <meter
+            min="0"
+            max="1" 
+            value=".6"  
+            low=".4" 
+            high=".8"
+            optimum=".6">
+            </meter>
+  </section>
+
+
+
+  <section class="links">
+    <h3>Categories</h3>
+    
+    <ul>
+      <li>Intro</li>
+      <li>Semantics</li>
+      <li>APL</li>
+      <li>New Attributes</li>
+      <li>Multimedia Elements</li>
+    </ul>
+  </section>
+
+  <section class="poll">
+      <h3>
+        What's you favorite Browser
+      </h3>
+      <form >
+        <input list="browsers">
+         <datalist id="browsers">
+          <option value="Chrome">
+           <option value="Safari">
+           <option value="Explorer">
+           <option value="Mozila">
+           <option value="Opera">
+         </datalist>
+         <input type="submit"value=choose>
+      </form>
+    </section>
+
+
+  <section class="calculate-age">
+    <h3>Calculate your age in Days</h3>
+    <form oninput="result.value = parseInt(age.value)* parseInt(days.value)">
+
+      <input type="text" name="age">
+      <input type="hidden" name="days" value="365">
+
+      <output name="result"></output>
+    </form>
+  </section> 
+     
+  <section>
+    <h3>Today's Audio</h3>
+    <audio controls preload="auto">
+      
+        <source src="Flames.mp3" type="audio/ogg">
+        <source src="Rihanna - Needed Me.mp3" type="audio/mpeg">
+      </audio> 
+  </section>
+
+
+
+
+</aside>
+
+
+  
+<div class="clearfix"></div> <!--here is an empty div to clear the pb between the sidebar and to reverse the footer to his original place -->
+
+  <footer>
+    Copyright 2019 &copy All Rights Reserved 
+  </footer>
+
+    
+
+   
+
+</body>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</html>
